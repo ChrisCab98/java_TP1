@@ -2,10 +2,10 @@ public class MonObjet
 {
     private long valeur;
 
-    public MonObjet()
+    public MonObjet(long valeurUtilisateur)
     {
         System.out.println("Constructeur");
-        valeur = 2;
+        valeur = valeurUtilisateur;
     }
 
     public void affichePuisModifieValeur(long nouvelleValeur)
@@ -15,7 +15,7 @@ public class MonObjet
     }
 
     public static void main(String arguments[]) {
-        MonObjet objet = new MonObjet();
+        MonObjet objet = new MonObjet(20);
         objet.affichePuisModifieValeur(10);
         System.out.println(("L'algo c'est rigolo ?"));
         objet.affichePuisModifieValeur(20);
