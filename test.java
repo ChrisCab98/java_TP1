@@ -35,22 +35,20 @@ abstract class BiPoint {
     }
 }
 
-class Segment extends BiPoint implements ObjetMesurable
-{
-    public Segment(double x1, double y1, double x2, double y2)
-    {
-        super(x1,y1,x2,y2);
+class Segment extends BiPoint implements ObjetMesurable {
+    public Segment(double x1, double y1, double x2, double y2) {
+        super(x1, y1, x2, y2);
     }
 
     public double longueur() {
-        return Math.sqrt(Math.pow(x2-x1, 2)+Math.pow(y2-y1, 2));
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
 }
 
-public class test
-{
-    public static void afficheLongueur(ObjetMesurable objet) // Méthode statique qui doit pouvoir afficher la longueur de tout ObjetMesurable
+public class test {
+    public static void afficheLongueur(ObjetMesurable objet) // Méthode statique qui doit pouvoir afficher la longueur
+                                                             // de tout ObjetMesurable
     {
         System.out.println("Longueur : " + objet.longueur());
     }

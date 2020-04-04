@@ -2,8 +2,13 @@ public class MonObjet {
     private long valeur;
 
     public MonObjet(long valeurUtilisateur) {
-        System.out.println("Constructeur");
+        System.out.println("Constructeur avec parametre");
         valeur = valeurUtilisateur;
+    }
+
+    public MonObjet() {
+        System.out.println("Constructeur");
+        valeur = 2;
     }
 
     public void affichePuisModifieValeur(long nouvelleValeur) {
@@ -12,7 +17,7 @@ public class MonObjet {
     }
 
     public static void main(String arguments[]) {
-        MonObjet objet = new MonObjet(20);
+        MonObjet objet = new MonObjet(30);
         objet.affichePuisModifieValeur(10);
         System.out.println(("L'algo c'est rigolo ?"));
         objet.affichePuisModifieValeur(20);
