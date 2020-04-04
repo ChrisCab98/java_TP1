@@ -47,3 +47,19 @@ class Segment extends BiPoint implements ObjetMesurable
     }
 
 }
+
+public class test
+{
+    public static void afficheLongueur(ObjetMesurable objet) // Méthode statique qui doit pouvoir afficher la longueur de tout ObjetMesurable
+    {
+        System.out.println("Longueur : " + objet.longueur());
+    }
+
+    public static void main(String[] args) {
+        Chaine chaine = new Chaine("Coucou");
+        afficheLongueur(chaine);
+        Segment segment = new Segment(0, 0, 1, 1);
+        afficheLongueur(segment);
+    }
+
+}
