@@ -1,15 +1,12 @@
-public class MonObjet
-{
+public class MonObjet {
     private long valeur;
 
-    public MonObjet(long valeurUtilisateur)
-    {
+    public MonObjet(long valeurUtilisateur) {
         System.out.println("Constructeur");
         valeur = valeurUtilisateur;
     }
 
-    public void affichePuisModifieValeur(long nouvelleValeur)
-    {
+    public void affichePuisModifieValeur(long nouvelleValeur) {
         System.out.println("Affiche de la valeur : " + valeur);
         valeur = nouvelleValeur;
     }
